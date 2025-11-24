@@ -13,12 +13,12 @@ FEATURES = [
 
 # User-friendly labels for sliders
 FEATURE_LABELS = {
-    "Price_norm": "Price (Lower is Better)",
-    "Range_norm": "Range (Longer is Better)",
-    "Charging_norm": "Charging Speed (Faster is Better)",
-    "Maint_norm": "Maintenance Cost (Lower is Better)",
+    "Price_norm": "Price",
+    "Range_norm": "Range",
+    "Charging_norm": "Charging Speed",
+    "Maint_norm": "Maintenance Cost",
     "Space_norm": "Cargo Space",
-    "Accel_norm": "Acceleration (Faster is Better)",
+    "Accel_norm": "Acceleration",
     "Env_norm": "Environmental Impact",
     "Safety_norm": "Safety Rating"
 }
