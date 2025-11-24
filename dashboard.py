@@ -4,7 +4,7 @@ import pandas as pd
 # ============================
 # Load your CSV results
 # ============================
-df = pd.read_csv("EV_US_Fit_Scores_Results.csv")
+df = pd.read_csv("EV_US_Fit_Scores_Results.csv", encoding='latin1')
 
 FEATURES = [
     "Price_norm", "Range_norm", "Charging_norm", "Maint_norm",
@@ -77,7 +77,7 @@ st.title("🚗 EV Fit Score Dashboard")
 st.subheader(f"Persona: {persona} | Region: {region}")
 
 st.write("### Ranked EV Models")
-st.dataframe(df_sorted[["Model", "Region", "Fit Score", "Rank"]])
+st.dataframe(df_sorted[["Model", "Region", "Fit Score", "Rank"]].reset_index(drop=True))
 
 st.write("### Fit Score Chart")
 st.bar_chart(df_sorted.set_index("Model")["Fit Score"])
