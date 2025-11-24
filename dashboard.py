@@ -66,7 +66,7 @@ default_slider_value = 5
 slider_values = []
 
 if persona == "Customize My Importance":
-    st.sidebar.subheader("Set How Important Each Feature Is to You"
+    st.sidebar.subheader("Set How Important Each Feature Is to You \n" 
     "(0 = Not Important, 10 = Very Important)")
     
     # Create session state to store slider values
